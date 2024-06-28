@@ -1138,6 +1138,12 @@ button.scrollTopStick.active {
     font-weight: 500;
     margin-right: 40px;
     position: relative;
+    
+}
+.desktop-nav nav .nav-bar > ul > li > a:hover{
+    font-size: 25px;
+    color: #333;
+    transform: scale(1.05);
 }
 .desktop-nav nav .nav-bar > ul > li:last-child > a {
     margin-right: 0;
@@ -1149,15 +1155,7 @@ button.scrollTopStick.active {
 .desktop-nav ul.sub-menu > li > ul {
     padding-left: 15%;
 }
-/*.desktop-nav nav .nav-bar ul > li.menu-item-has-children a:before {
-    content: url(../images/down-arrow.svg);
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: -15px;
-    width: 11px;
-    height: 25px;
-}*/
+
 .desktop-nav nav .nav-bar > ul > li > a svg {
     width: 11px;
 }
