@@ -512,6 +512,7 @@ table {
 .theme-btn:hover{
     color: white;
 }
+
 .parallax {
     position: absolute;
     width: 100%;
@@ -1034,6 +1035,7 @@ button.scrollTopStick.active {
     padding: 15px 0;
     
 }
+
 .top-bar .row{
     align-items: center;
 }
@@ -3605,17 +3607,25 @@ img.sideimage {
 }
 .about-us .church-about-img img {
     position: absolute;
-    width: 1000px;
-    left: -285px;
-    top: -20px;
+    width: 800px;
+    left: -100px;
+    top: 60px;
+    border-radius: 30px;
+}
+.live{
+    display: flex;
+    justify-content: center;
+    
 }
 .church-about-img-two {
     position: relative;
 }
 .church-about-img-two img {
     position: absolute;
-    top: 0;
-    left: -115px;
+    top: 200px;
+    left: -50px;
+    border-radius: 30px;
+    width: 680px;
 }
 .about-us .services-online p {
     font-size: 18px;
@@ -3671,6 +3681,16 @@ img.sideimage {
     font-size: 26px;
     line-height: 60px;
     margin-top: 5px;
+}
+.get{
+    color: #1e52a8;
+    font-weight: bold;
+    font-size: 30px;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+.get:hover{
+    transform: scale(1.05);
 }
 /* Pray End */
 
