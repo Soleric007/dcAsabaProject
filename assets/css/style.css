@@ -1098,10 +1098,11 @@ button.scrollTopStick.active {
 .desktop-nav nav .nav-bar > ul{
     display: flex;
     align-items: center;
+    
 }
 .desktop-nav nav{
     margin-top: 10px;
-    background-color: white;
+    background-color: #000;
     position: relative;
     justify-content: space-between;
 }
@@ -1110,13 +1111,17 @@ button.scrollTopStick.active {
     
     
 }
+/* .dcLogo{
+    width: 200px;
+    
+} */
 .desktop-nav nav:before,
 .desktop-nav nav:after{
     content: "";
     width: 55px;
     height: 100%;
     position: absolute;
-    background-color: white;
+    background-color: #000;
     top: 0;
 }
 .desktop-nav nav:before{
@@ -1137,7 +1142,7 @@ button.scrollTopStick.active {
 .desktop-nav nav .nav-bar > ul > li > a{
     font-size: 18px;
     line-height: 28px;
-    color: #333;
+    color: white;
     font-weight: 500;
     margin-right: 40px;
     position: relative;
@@ -4583,7 +4588,7 @@ a.next-slide.nav-active {
     left: 0;
     width: 50%;
     height: 100%;
-    background-color: white;
+    background-color: #000;
     padding: 50px 40px 15px;
     z-index: 5;
     transition: 0.45s ease-in-out;
@@ -4799,19 +4804,19 @@ a.next-slide.nav-active {
 }
 .mobile-nav > ul > li {
     position: relative;
-    border-bottom: 1px solid #d4d4d4;
+    border-bottom: 1px solid #fff;
     padding: 10px 0;
 }
 .mobile-nav > ul li > a {
     font-size: 17px;
-    color: #333;
+    color: #fff;
     line-height: 26px;
     position: relative;
 }
 .mobile-nav > ul > li > a {
     font-size: 20px;
     line-height: 30px;
-    color: #000;
+    color: #fff;
 }
 .mobile-nav > ul  li.menu-item-has-children  ul.sub-menu {
     padding-left: 25px;
@@ -4825,7 +4830,7 @@ a.next-slide.nav-active {
     -webkit-transform: translateX(15px);
     -moz-transform: translateX(15px);
     -o-transform: translateX(15px);
-    border-top: 1px solid #d4d4d4;
+    border-top: 1px solid #fff;
     margin-top: 8px;
 }
 .mobile-nav > ul  li.menu-item-has-children.active > ul.sub-menu{
