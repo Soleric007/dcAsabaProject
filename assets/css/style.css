@@ -82,6 +82,28 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+.pee{
+    
+}
+.myNewDiv{
+    display: flex;
+    justify-content: space-around;
+}
+#him{
+    font-size: 20px;
+}
+.peeImg{
+    width: 670px;
+}
+.myNew{
+    border: 1px solid #003799;
+    width: 670px;
+}
+.myNewP{
+    width: 670px;
+    padding: 30px;
+}
+/*  */
 small{
    font-family: 'Karla', sans-serif;
 }
@@ -3606,6 +3628,15 @@ img.sideimage {
     line-height: 32px;
     width: 85%;
     margin: 0;
+}.pee{
+    position: relative;
+}
+.pee img{
+    position: absolute;
+    width: 650px;
+    left: -100px;
+    top: 60px;
+    
 }
 .about-us .church-about-img {
     position: relative;
