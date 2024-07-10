@@ -3381,7 +3381,7 @@
 	}
 	.sidetwo .icon {
 	    margin-right: 10px;
-	    flex-basis: 17%;
+	    /* flex-basis: 17%; */
 	}
 
 	.hero-three .data .tittle h1 {
