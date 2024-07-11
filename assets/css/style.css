@@ -2292,8 +2292,20 @@ button.scrollTopStick.active {
     display: inline-table;
     text-align: center;
 }
+#tele{
+    width: 750px;
+}
 .event .theme-btn:hover {
     color: white;
+}
+
+/* #pastorSlider{
+    display: flex;
+    justify-content: center;
+} */
+
+#liveStream{
+    margin-bottom: 50px;
 }
 .event .theme-btn:before {
     content: "";
