@@ -21,7 +21,12 @@
 
 	<!-- Favicon -->
 
-	<link rel="icon" type="image/x-icon" href="assets/images/pastor-icon.webp">
+	<link
+	rel="icon"
+	type="image/x-icon"
+	href="assets/images/pastor-icon.webp"
+  />
+
 
 
 	<!-- Bootstrap -->
@@ -276,17 +281,17 @@
 
 			<div class="banner-data text-center">
 
-				<h2 class="text-white font-bold">Our Ministries</h2>
+				<h2 class="text-white font-bold">Satellite Churchs</h2>
 
 				<ul class="flex-all">
 
 					<li><a href="JavaScript:void(0)" class="text-white">Home</a></li>
 
-					<li><a href="JavaScript:void(0)" class="text-white">Our Ministries</a></li>
+					<li><a href="JavaScript:void(0)" class="text-white">Satellite Churchs</a></li>
 
 				</ul>
 
-				<img src="assets/images/banner-logo.webp" alt="Banner Logo">
+				<!-- <img src="assets/images/banner-logo.webp" alt="Banner Logo"> -->
 
 			</div>
 
@@ -294,100 +299,139 @@
 
 	<!-- Banner End -->
 
-
-
+	
 	<!-- Our Ministries Start -->
+		<style type="text/tailwindcss">
+			@layer base {
+				:root {
+					--background: 0 0% 100%;
+--foreground: 240 10% 3.9%;
+--card: 0 0% 100%;
+--card-foreground: 240 10% 3.9%;
+--popover: 0 0% 100%;
+--popover-foreground: 240 10% 3.9%;
+--primary: 240 5.9% 10%;
+--primary-foreground: 0 0% 98%;
+--secondary: 240 4.8% 95.9%;
+--secondary-foreground: 240 5.9% 10%;
+--muted: 240 4.8% 95.9%;
+--muted-foreground: 240 3.8% 46.1%;
+--accent: 240 4.8% 95.9%;
+--accent-foreground: 240 5.9% 10%;
+--destructive: 0 84.2% 60.2%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 5.9% 90%;
+--input: 240 5.9% 90%;
+--ring: 240 5.9% 10%;
+--radius: 0.5rem;
+				}
+				.dark {
+					--background: 240 10% 3.9%;
+--foreground: 0 0% 98%;
+--card: 240 10% 3.9%;
+--card-foreground: 0 0% 98%;
+--popover: 240 10% 3.9%;
+--popover-foreground: 0 0% 98%;
+--primary: 0 0% 98%;
+--primary-foreground: 240 5.9% 10%;
+--secondary: 240 3.7% 15.9%;
+--secondary-foreground: 0 0% 98%;
+--muted: 240 3.7% 15.9%;
+--muted-foreground: 240 5% 64.9%;
+--accent: 240 3.7% 15.9%;
+--accent-foreground: 0 0% 98%;
+--destructive: 0 62.8% 30.6%;
+--destructive-foreground: 0 0% 98%;
+--border: 240 3.7% 15.9%;
+--input: 240 3.7% 15.9%;
+--ring: 240 4.9% 83.9%;
+				}
+			}
+		</style>
 
-	<section class="gap our-ministries">
+  <section id="openui">
+    <div class="bg-background text-foreground p-8">
+  <div  class="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2">
+      <h2 class="text-muted-foreground uppercase mb-2">Connect with us</h2>
+      <h1 class="text-4xl font-bold mb-4">Be a part of the family. Connect with a satellite church close to you!</h1>
+      <p class="text-muted-foreground mb-4">Use the information below to find a satellite church close to your location. We look forward to seeing you in one of our small groups!</p>
+    </div>
+    <div class="md:w-1/2 mt-4 md:mt-0 md:ml-8">
+      <img src="./assets/images/connectwithus.webp" alt="People connecting at church" class="rounded-lg shadow-lg">
+    </div>
+  </div>
+</div>
+  </section>
 
-		<div class="heading">
+  <table class="table table-striped table-hover table-bordered">
+	<thead>
+	  <tr>
+		<th scope="col">#</th>
+		<th scope="col">Sattelite Churchs and their details</th>
+		
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<th scope="row">1</th>
+		<td>Mark</td>
+		
+	  </tr>
+	  <tr>
+		<th scope="row">2</th>
+		<td>Jacob</td>
+		
+	  </tr>
+	  <tr>
+		<th scope="row">3</th>
+		<td>Larry the Bird</td>
+		
+	  </tr>
+	</tbody>
+  </table>
 
-				<h2 class="m-auto">The Blesso Church is Committed to Safeguarding as an Integral Part of Its Life, Mission and Ministry</h2>
+  <section id="openui">
+    <div class="bg-background text-foreground p-8">
+  <div  class="max-w-7xl mx-auto flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2">
+      <h2 class="text-muted-foreground uppercase mb-2">Also Join Our Cell Groups</h2>
+      <h1 class="text-4xl font-bold mb-4">Be a part of the family. Connect with a Cell group close to you!</h1>
+      <p class="text-muted-foreground mb-4">Use the information below to find a Cell group close to your location. We look forward to seeing you in one of our small groups!</p>
+    </div>
+    <div class="md:w-1/2 mt-4 md:mt-0 md:ml-8">
+      <img src="./assets/images/connectwithus.webp" alt="People connecting at church" class="rounded-lg shadow-lg">
+    </div>
+  </div>
+</div>
+  </section>
 
-			</div>
-
-		<div class="container">
-
-			<div class="row">
-
-				<div class="col-lg-4 col-md-6 col-sm-12">
-
-					<div class="ministry text-center light-bg position-relative">
-
-						<img class="rounded-circle position-relative img-fluid w-100" alt="ministy1" src="assets/images/ministry1.webp">
-
-						<a href="JavaScript:void(0)" class="font-bold flex-all position-relative">Ladies Ministry</a>
-
-					</div>
-
-				</div>
-
-				<div class="col-lg-4 col-md-6 col-sm-12">
-
-					<div class="ministry text-center light-bg position-relative">
-
-						<img class="rounded-circle position-relative img-fluid w-100" alt="ministy2" src="assets/images/ministry2.webp">
-
-						<a href="JavaScript:void(0)" class="font-bold flex-all position-relative">Ladies Ministry</a>
-
-					</div>
-
-				</div>
-
-				<div class="col-lg-4 col-md-6 col-sm-12">
-
-					<div class="ministry text-center light-bg position-relative">
-
-						<img class="rounded-circle position-relative img-fluid w-100" alt="ministy3" src="assets/images/ministry3.webp">
-
-						<a href="JavaScript:void(0)" class="font-bold flex-all position-relative">Ladies Ministry</a>
-
-					</div>
-
-				</div>
-
-				<div class="col-lg-4 col-md-6 col-sm-12">
-
-					<div class="ministry text-center light-bg position-relative">
-
-						<img class="rounded-circle position-relative img-fluid w-100" alt="ministy4" src="assets/images/ministry4.webp">
-
-						<a href="JavaScript:void(0)" class="font-bold flex-all position-relative">Ladies Ministry</a>
-
-					</div>
-
-				</div>
-
-				<div class="col-lg-4 col-md-6 col-sm-12">
-
-					<div class="ministry text-center light-bg position-relative">
-
-						<img class="rounded-circle position-relative img-fluid w-100" alt="ministy5" src="assets/images/ministry5.webp">
-
-						<a href="JavaScript:void(0)" class="font-bold flex-all position-relative">Ladies Ministry</a>
-
-					</div>
-
-				</div>
-
-				<div class="col-lg-4 col-md-6 col-sm-12">
-
-					<div class="ministry text-center light-bg position-relative">
-
-						<img class="rounded-circle position-relative img-fluid w-100" alt="ministy6" src="assets/images/ministry6.webp">
-
-						<a href="JavaScript:void(0)" class="font-bold flex-all position-relative">Ladies Ministry</a>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</section>
-
+  <table class="table table-striped table-hover table-bordered">
+	<thead>
+	  <tr>
+		<th scope="col">#</th>
+		<th scope="col">Cell Groups and their details</th>
+		
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<th scope="row">1</th>
+		<td>Mark</td>
+		
+	  </tr>
+	  <tr>
+		<th scope="row">2</th>
+		<td>Jacob</td>
+		
+	  </tr>
+	  <tr>
+		<th scope="row">3</th>
+		<td>Larry the Bird</td>
+		
+	  </tr>
+	</tbody>
+  </table>
 	<!-- Our Ministries End -->
 
 
@@ -402,7 +446,7 @@
 
 				<li class="flex-all">
 
-					<a href="JavaScript:void(0)" class="flex-all rounded-circle">
+					<a href="https://www.facebook.com/DCasaba/" class="flex-all rounded-circle">
 
 						<svg id="gggg" enable-background="new 0 0 24 24" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg"><path d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z"/></svg>
 
@@ -414,19 +458,19 @@
 
 				<li class="flex-all">
 
-					<a href="JavaScript:void(0)" class="flex-all rounded-circle">
+					<a href="https://www.youtube.com/@dominioncityasabahq" class="flex-all rounded-circle">
 
 						<svg version="1.1" id="sdsff" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"> <g> <g> <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016 c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992 c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056 c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152 c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792 c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44 C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568 C480.224,136.96,497.728,118.496,512,97.248z"/> </g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
 
 					</a>
 
-					<p class="font-bold">Follow us on Twitter</p>
+					<p class="font-bold">Subscribe on Youtube</p>
 
 				</li>
 
 				<li class="flex-all">
 
-					<a href="JavaScript:void(0)" class="flex-all rounded-circle">
+					<a href="https://www.instagram.com/dominioncityasaba/" class="flex-all rounded-circle">
 
 						<svg viewBox="0 0 511 511.9"  xmlns="http://www.w3.org/2000/svg"><path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/></svg>
 
@@ -446,81 +490,7 @@
 
 
 
-	<!-- Catholic Church Start -->
 
-	<section class="gap catholic-church">
-
-		<div class="container">
-
-			<div class="row align-items-center">
-
-				<div class="col-lg-6 col-md-12 col-sm-12">
-
-					<div class="prog-part w-95">
-
-						<h2>I believe in one, holy, catholic and apostolic Church.</h2>
-
-						<p class="w-85">Lorem ipsum dolor sit amet, consectetur adipis icing elit, sed to tam rem ape eaque ipsa quae a b illo invene.</p>
-
-						<div class="prog-bar">
-
-							<div class="progress">
-
-							  <div class="progress-bar" role="progressbar" style="width: 86%;" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Worship (86%)</div>
-
-							</div>
-
-							<div class="progress">
-
-							  <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Services (55%)</div>
-
-							</div>
-
-							<div class="progress">
-
-							  <div class="progress-bar" role="progressbar" style="width: 97%;" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Experience (97%)</div>
-
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-
-				<div class="col-lg-6 col-md-12 col-sm-12">
-
-					<div class="video-sec">
-
-						<div class="w-100 text-start video position-relative">
-
-							<img src="assets/images/video-img-1.webp" alt="video-img-1">
-
-							<a data-fancybox href="https://www.youtube.com/watch?v=uemObN8_dcw" class="flex-all rounded-circle">
-
-								<svg id="play-btngdffdsf" enable-background="new 0 0 494.942 494.942"  viewBox="0 0 494.942 494.942" xmlns="http://www.w3.org/2000/svg"><path d="m35.353 0 424.236 247.471-424.236 247.471z"/></svg>
-
-							</a>
-
-						</div>
-
-						<div class="w-100 text-end">
-
-							<img src="assets/images/video-img-2.webp" alt="video-img-2">
-
-						</div>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</div>
-
-	</section>
-
-	<!-- Catholic Church End -->
 
 
 
@@ -702,10 +672,61 @@
 	<button id="scrollTop" class="scrollTopStick"><svg viewBox="0 0 490.523 490.523" fill="#fff" height="15"> <path style="fill:#FFC107;" d="M487.411,355.047L252.744,120.38c-4.165-4.164-10.917-4.164-15.083,0L2.994,355.047 c-4.093,4.237-3.976,10.99,0.262,15.083c4.134,3.993,10.687,3.993,14.821,0l227.115-227.115l227.115,227.136 c4.237,4.093,10.99,3.976,15.083-0.261c3.993-4.134,3.993-10.688,0-14.821L487.411,355.047z"></path> <path d="M479.859,373.266c-2.831,0.005-5.548-1.115-7.552-3.115L245.192,143.015L18.077,370.151 c-4.237,4.093-10.99,3.976-15.083-0.262c-3.993-4.134-3.993-10.687,0-14.821l234.667-234.667c4.165-4.164,10.917-4.164,15.083,0 l234.667,234.667c4.159,4.172,4.148,10.926-0.024,15.085C485.388,372.146,482.681,373.265,479.859,373.266z"></path> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg></button>
 
 
+	<script type="text/javascript">
+		window.tailwind.config = {
+			darkMode: ['class'],
+			theme: {
+				extend: {
+					colors: {
+						border: 'hsl(var(--border))',
+						input: 'hsl(var(--input))',
+						ring: 'hsl(var(--ring))',
+						background: 'hsl(var(--background))',
+						foreground: 'hsl(var(--foreground))',
+						primary: {
+							DEFAULT: 'hsl(var(--primary))',
+							foreground: 'hsl(var(--primary-foreground))'
+						},
+						secondary: {
+							DEFAULT: 'hsl(var(--secondary))',
+							foreground: 'hsl(var(--secondary-foreground))'
+						},
+						destructive: {
+							DEFAULT: 'hsl(var(--destructive))',
+							foreground: 'hsl(var(--destructive-foreground))'
+						},
+						muted: {
+							DEFAULT: 'hsl(var(--muted))',
+							foreground: 'hsl(var(--muted-foreground))'
+						},
+						accent: {
+							DEFAULT: 'hsl(var(--accent))',
+							foreground: 'hsl(var(--accent-foreground))'
+						},
+						popover: {
+							DEFAULT: 'hsl(var(--popover))',
+							foreground: 'hsl(var(--popover-foreground))'
+						},
+						card: {
+							DEFAULT: 'hsl(var(--card))',
+							foreground: 'hsl(var(--card-foreground))'
+						},
+					},
+				}
+			}
+		}
+	</script>
 	<!-- Jquery -->
 
 	<script src="assets/js/jquery.min.js"></script>
 
+
+	<!-- openUi -->
+
+	<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
+
+	<!-- openUi -->
 
 	<!-- Animate on scroll Js -->
 

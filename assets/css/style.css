@@ -1127,16 +1127,16 @@ button.scrollTopStick.active {
     background-color: #000;
     position: relative;
     justify-content: space-between;
+    height: 80px;
 }
+
 .dcLogo2{
     height: 140px;
-    
+}
+.dcLogo{
+    width: 170px;
     
 }
-/* .dcLogo{
-    width: 200px;
-    
-} */
 .desktop-nav nav:before,
 .desktop-nav nav:after{
     content: "";
@@ -1170,6 +1170,15 @@ button.scrollTopStick.active {
     position: relative;
     
 }
+#eventImg{
+    width: 100%;
+}
+/* #openui{
+   
+    margin: auto;
+    justify-content: center;
+    margin: 50px;
+} */
 .desktop-nav nav .nav-bar > ul > li > a:hover{
     font-size: 25px;
     color: #333;
