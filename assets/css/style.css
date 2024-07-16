@@ -937,6 +937,7 @@ button.scrollTopStick {
     border: 0;
     position: fixed;
     bottom: 50px;
+    top: 580px;
     right: 50px;
     opacity: 0;
     visibility: hidden;
