@@ -1174,12 +1174,147 @@ button.scrollTopStick.active {
 #eventImg{
     width: 100%;
 }
-/* #openui{
-   
-    margin: auto;
+#soloCon {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.accounts-info, .special-accounts {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.accounts-info h2, .special-accounts h2 {
+    margin-top: 0;
+}
+
+.account-item {
+    margin-bottom: 20px;
+    
+}
+
+.account-item h3 {
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.account-item p {
+    margin: 5px 0;
+}
+.myhr {
+    border: 2px solid #fff;
+    width: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.myhr2 {
+    border: 2px solid #000;
+    width: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.myhr3 {
+    border: 2px solid #003799;
+    width: 70px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    
+}
+.myhrcentered{
+    display: flex;
     justify-content: center;
-    margin: 50px;
-} */
+    text-align: center;
+    align-items: center;
+}
+.special-accounts {
+    background-color: #003799;
+    color: white;
+}
+
+.give-section {
+    background-image: url('../images/givebg.webp'); /* You need to set your background image here */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 60px 20px;
+    color: white;
+    position: relative;
+    margin-top: 150px;
+}
+
+.give-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 36px;
+}
+
+.give-content p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.subtext {
+    margin-top: 40px;
+    font-size: 24px;
+    align-items: center;
+    color: #000;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .give-section {
+        padding: 40px 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .subtext {
+        font-size: 14px;
+    }
+}
+
+
+.special-accounts h3 {
+    color: white;
+    
+}
+#account-item p, h3, .special-accounts h2{
+    color: #fff;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .accounts-info, .special-accounts {
+        margin: 10px auto;
+        min-width: auto;
+    }
+}
 .desktop-nav nav .nav-bar > ul > li > a:hover{
     font-size: 25px;
     color: #333;
