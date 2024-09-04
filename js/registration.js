@@ -18,7 +18,7 @@ document.getElementById('wizard').addEventListener('submit', async function(e) {
     };
 
     try {
-        const response = await fetch('http://localhost:3000/register', '0.0.0.0',{
+        const response = await fetch('http://localhost:3000/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -41,7 +41,7 @@ document.getElementById('wizard').addEventListener('submit', async function(e) {
             };
         
             try {
-                const response = await fetch('http://localhost:3000/register', '0.0.0.0', {
+                const response = await fetch('http://localhost:3000/register', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
