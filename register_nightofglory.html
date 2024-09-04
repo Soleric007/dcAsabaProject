@@ -1,199 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<title>Register</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="author" content="colorlib.com">
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
 
-<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+    <!-- Title Page-->
+    <title>Register</title>
 
-<link rel="stylesheet" href="css/style.css">
-<link
-rel="icon"
-type="image/x-icon"
-href="assets/images/pastor-icon.webp"
-/>
-<meta name="robots" content="noindex, follow">
-<script nonce="5d7d4574-5098-44a5-ac0d-9312cee20796">try{(function(w,d){!function(j,k,l,m){if(j.zaraz)console.error("zaraz is loaded twice");else{j[l]=j[l]||{};j[l].executed=[];j.zaraz={deferred:[],listeners:[]};j.zaraz._v="5796";j.zaraz.q=[];j.zaraz._f=function(n){return async function(){var o=Array.prototype.slice.call(arguments);j.zaraz.q.push({m:n,a:o})}};for(const p of["track","set","debug"])j.zaraz[p]=j.zaraz._f(p);j.zaraz.init=()=>{var q=k.getElementsByTagName(m)[0],r=k.createElement(m),s=k.getElementsByTagName("title")[0];s&&(j[l].t=k.getElementsByTagName("title")[0].text);j[l].x=Math.random();j[l].w=j.screen.width;j[l].h=j.screen.height;j[l].j=j.innerHeight;j[l].e=j.innerWidth;j[l].l=j.location.href;j[l].r=k.referrer;j[l].k=j.screen.colorDepth;j[l].n=k.characterSet;j[l].o=(new Date).getTimezoneOffset();if(j.dataLayer)for(const w of Object.entries(Object.entries(dataLayer).reduce(((x,y)=>({...x[1],...y[1]})),{})))zaraz.set(w[0],w[1],{scope:"page"});j[l].q=[];for(;j.zaraz.q.length;){const z=j.zaraz.q.shift();j[l].q.push(z)}r.defer=!0;for(const A of[localStorage,sessionStorage])Object.keys(A||{}).filter((C=>C.startsWith("_zaraz_"))).forEach((B=>{try{j[l]["z_"+B.slice(7)]=JSON.parse(A.getItem(B))}catch{j[l]["z_"+B.slice(7)]=A.getItem(B)}}));r.referrerPolicy="origin";r.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(j[l])));q.parentNode.insertBefore(r,q)};["complete","interactive"].includes(k.readyState)?zaraz.init():j.addEventListener("DOMContentLoaded",zaraz.init)}}(w,d,"zarazData","script");window.zaraz._p=async bv=>new Promise((bw=>{if(bv){bv.e&&bv.e.forEach((bx=>{try{const by=d.querySelector("script[nonce]"),bz=by?.nonce||by?.getAttribute("nonce"),bA=d.createElement("script");bz&&(bA.nonce=bz);bA.innerHTML=bx;bA.onload=()=>{d.head.removeChild(bA)};d.head.appendChild(bA)}catch(bB){console.error(`Error executing script: ${bx}\n`,bB)}}));Promise.allSettled((bv.f||[]).map((bC=>fetch(bC[0],bC[1]))))}bw()}));zaraz._p({"e":["(function(w,d){})(window,document)"]});})(window,document)}catch(e){throw fetch("/cdn-cgi/zaraz/t"),e;};</script></head>
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+</head>
+
 <body>
-  
-<div class="wrapper">
-<form action id="wizard">
+    <div id="back" class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div id="successModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="modalMessage"></p>
+                <button id="backButton" class="btn btn--radius-2 btn--blue">Go to Homepage</button>
+            </div>
+        </div>
+        
+        <div class="wrapper wrapper--w790">
+            <div  class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">Registration For Night Of Glory 2024</h2>
+                </div>
+                <div class="card-body">
+                    <form method="POST" id="wizard">
+                        <!-- <div class="form-row m-b-55">
+                            <div class="name">Name</div>
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" placeholder="Full Name" name="Full Name">
+                                            <label class="label--desc">Full Name</label>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="form-row">
+                            <div class="name">Full Name</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input required class="input--style-5" type="text" placeholder="Full Name" name="Full Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Gender</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select id="gender" name="subject">
+                                            <option disabled="disabled" selected="selected">Choose option</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Address</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input required class="input--style-5" type="text" placeholder="Address" name="Address">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Email</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input required class="input--style-5" placeholder="Your Email" type="email" name="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row m-b-55">
+                            <div class="name">Phone</div>
+                            <div class="value">
+                                <div class="row row-refine">
+                                    <div class="col-3">
+                                        <div class="input-group-desc">
+                                            <input required id="area_code" class="input--style-5" type="text" placeholder="" name="area_code">
+                                            <label class="label--desc">Area Code</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="input-group-desc">
+                                            <input required class="input--style-5" placeholder="Phone Number" type="text" name="phone">
+                                            <label class="label--desc">Phone Number</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row p-t-20">
+                            <!-- <label class="label label--block"></label> -->
+                            <div class="p-t-15">
+                                <label class="radio-container m-r-55">I plan on attending Night Of Glory 2024!
+                                    <input  type="radio" id="check" name="gender">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <!-- <label class="radio-container">Female
+                                    <input type="radio" name="gender">
+                                    <span class="checkmark"></span>
+                                </label> -->
+                            </div>
+                        </div>
+                        <div>
+                            <button id="buttonSubmit" class="btn btn--radius-2 btn--blue" type="submit">Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<h2></h2>
-<section>
-<div class="inner">
-<div class="image-holder">
-<img src="assets/images/form_images/form-wizard-1.jpg" alt>
-</div>
-<div class="form-content">
-<div class="form-header">
-<h3>Registration</h3>
-</div>
-<p>Please fill with your details</p>
-<div class="form-row">
-<div class="form-holder">
-<input type="text" placeholder="First Name" class="form-control">
-</div>
-<div class="form-holder">
-<input type="text" placeholder="Last Name" class="form-control">
-</div>
-</div>
-<div class="form-row">
-<div class="form-holder">
-<input type="text" placeholder="Your Email" class="form-control">
-</div>
-<div class="form-holder">
-<input type="text" placeholder="Phone Number" class="form-control">
-</div>
-</div>
-<div class="form-row">
-<div class="form-holder">
-<input type="text" placeholder="Age" class="form-control">
-</div>
-<div class="form-holder" style="align-self: flex-end; transform: translateY(4px);">
-<div class="checkbox-tick">
-<label class="male">
-<input type="radio" name="gender" value="male" checked> Male<br>
-<span class="checkmark"></span>
-</label>
-<label class="female">
-<input type="radio" name="gender" value="female"> Female<br>
-<span class="checkmark"></span>
-</label>
-</div>
-</div>
-</div>
-<div class="checkbox-circle">
-<label>
-<input type="checkbox" checked> I plan on attending Night Of Glory 2024 2024! 
-<span class="checkmark"></span>
-</label>
-</div>
-</div>
-</div>
-</section>
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
 
-<h2></h2>
-<section>
-<div class="inner">
-<div class="image-holder">
-<img src="assets/images/form_images/form-wizard-2.jpg" alt>
-</div>
-<div class="form-content">
-<div class="form-header">
-<h3>Registration</h3>
-</div>
-<p>Please fill with additional info</p>
-<div class="form-row">
-<div class="form-holder w-100">
-<input type="text" placeholder="Address" class="form-control">
-</div>
-</div>
-<div class="form-row">
-<div class="form-holder">
-<input type="text" placeholder="City" class="form-control">
-</div>
-<div class="form-holder">
-<input type="text" placeholder="Zip Code" class="form-control">
-</div>
-</div>
-<div class="form-row">
-<div class="select">
-<div class="form-holder">
-<div class="select-control">Your State</div>
-<i class="zmdi zmdi-caret-down"></i>
-</div>
-<ul class="dropdown">
-	<li rel="Abia">Abia</li>
-<li rel="Adamawa">Adamawa</li>
-<li rel="Akwa Ibom">Akwa Ibom</li>
-<li rel="Anambra">Anambra</li>
-<li rel="Bauchi">Bauchi</li>
-<li rel="Bayelsa">Bayelsa</li>
-<li rel="Benue">Benue</li>
-<li rel="Borno">Borno</li>
-<li rel="Cross River">Cross River</li>
-<li rel="Delta">Delta</li>
-<li rel="Ebonyi">Ebonyi</li>
-<li rel="Edo">Edo</li>
-<li rel="Ekiti">Ekiti</li>
-<li rel="Enugu">Enugu</li>
-<li rel="Gombe">Gombe</li>
-<li rel="Imo">Imo</li>
-<li rel="Jigawa">Jigawa</li>
-<li rel="Kaduna">Kaduna</li>
-<li rel="Kano">Kano</li>
-<li rel="Katsina">Katsina</li>
-<li rel="Kebbi">Kebbi</li>
-<li rel="Kogi">Kogi</li>
-<li rel="Kwara">Kwara</li>
-<li rel="Lagos">Lagos</li>
-<li rel="Nasarawa">Nasarawa</li>
-<li rel="Niger">Niger</li>
-<li rel="Ogun">Ogun</li>
-<li rel="Ondo">Ondo</li>
-<li rel="Osun">Osun</li>
-<li rel="Oyo">Oyo</li>
-<li rel="Plateau">Plateau</li>
-<li rel="Rivers">Rivers</li>
-<li rel="Sokoto">Sokoto</li>
-<li rel="Taraba">Taraba</li>
-<li rel="Yobe">Yobe</li>
-<li rel="Zamfara">Zamfara</li>
-<li rel="FCT">FCT</li>
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+    <script src="js/registration.js"></script>
 
-</ul>
-</div>
-<div class="form-holder"></div>
-</div>
-</div>
-</div>
-</section>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
-<h2></h2>
-<section>
-<div class="inner">
-<div class="image-holder">
-<img src="assets/images/form_images/form-wizard-3.jpg" alt>
-</div>
-<div class="form-content">
-<div class="form-header">
-<h3>Registration</h3>
-</div>
-<p>Send an optional message</p>
-<div class="form-row">
-<div class="form-holder w-100">
-<textarea name id placeholder="Your messagere here!" class="form-control" style="height: 99px;"></textarea>
-</div>
-</div>
-<div class="checkbox-circle mt-24">
-<label>
-<input type="checkbox" checked> Please accept <a href="#">terms and conditions ?</a>
-<span class="checkmark"></span>
-</label>
-</div>
-</div>
-</div>
-</section>
-</form>
-</div>
-
-<script src="js/jquery-3.3.1.min.js"></script>
-
-<script src="js/jquery.steps.js"></script>
-<script src="js/main.js"></script>
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-23581568-13');
-</script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8bd05bc92e49d6ba","serverTiming":{"name":{"cfL4":true}},"version":"2024.8.0","token":"cd0b4b3a733644fc843ef0b185f98241"}' crossorigin="anonymous"></script>
-</body>
 </html>
+<!-- end document-->
